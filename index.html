@@ -72,9 +72,19 @@
             border: 1px solid grey; 
             opacity: 1; 
         }
-
-        .swiper-button-next, .swiper-button-prev {
+        
+        .swiper-button-prev {
             color: grey;
+        }
+
+        .swiper-button-next {
+            background: url(img/rightArrow.png) no-repeat;
+            background-size: 50% auto;
+            background-position: center;
+        }
+
+        .swiper-button-next::after{
+            display: none;
         }
     </style>
   </head>
@@ -84,6 +94,7 @@
     <div>
         <h3 style="text-align: center;">사진갤러리</h3>
         <p style="text-align: center;">기본 배경 캡쳐한 사진들</p>
+        <p style="text-align: center;">원하는 모양으로 화살표와 네비게이션을 커스텀 할 수 있다.</p>
     </div>
     <div class="swiper">
       <div class="swiper-wrapper">
